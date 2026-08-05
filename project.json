@@ -1,0 +1,28 @@
+{
+  "project_title": "Drought and Vegetation Stress Monitoring Using Remote Sensing and Time-Series Analysis \u2014 Northern Nigeria",
+  "repository_name": "northern-nigeria-drought-monitoring",
+  "study_area": "19 states of Northern Nigeria",
+  "analysis_period": "2001\u20132025; CHIRPS climatology 1981\u20132025",
+  "theme": "Climate Monitoring, Drought Risk and Vegetation Dynamics",
+  "author": "Abdullah Abdazeez Ayomide",
+  "headline_results": {
+    "regional_ndvi_sen_slope_per_year": -0.0007769114797049708,
+    "regional_ndvi_p": 0.008520236731434604,
+    "regional_evi_sen_slope_per_year": -0.0003578185827754629,
+    "regional_evi_p": 0.04125951957926039,
+    "rainfall_sen_slope_mm_per_year": 2.5023371058301715,
+    "rainfall_p": 0.20115677879053945,
+    "temperature_sen_slope_c_per_year": 0.015435023799214877,
+    "temperature_p": 0.02876822528460094,
+    "significant_ndvi_browning_states": 10,
+    "significant_warming_states": 9,
+    "significant_rainfall_increase_states": 4,
+    "most_extensive_compound_year": 2015,
+    "states_affected_in_2015": 12,
+    "browning_despite_increasing_rainfall_states": 7,
+    "highest_pressure_state": "Nasarawa",
+    "highest_pressure_score": 85.01446714887538,
+    "highest_compound_hotspot_state": "Kaduna",
+    "highest_compound_hotspot_score": 80.23476719625428
+  }
+}
