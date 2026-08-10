@@ -1,0 +1,12 @@
+Finding_ID,Authoritative_Finding
+R7_KF01,The final analysis identifies one agro-climatic regime — LGP 180–239 days — with statistically significant vegetation decline despite no significant rainfall decline.
+R7_KF02,"Within the target LGP 180–239 day stratum, NDVI declines at -0.002754 per year (FDR-adjusted p=0.000096), while rainfall shows no significant trend (slope=0.875 mm/year; FDR-adjusted p=0.682538)."
+R7_KF03,"EVI independently declines at -0.001671 per year (FDR-adjusted p=0.000849), reinforcing the NDVI signal."
+R7_KF04,Cropland share increased by +2.22 percentage points between 2016 and 2025 in the target stratum.
+R7_KF05,Tree-cover share declined by 8.88 percentage points between 2016 and 2025 in the target stratum.
+R7_KF06,"The target stratum experienced 1,123.1 km² of forest loss between 2001 and 2025, equivalent to 28.07% of baseline forest."
+R7_KF07,The combined land-change interpretation was supported in 77.8% of 81 robustness scenarios.
+R7_KF08,The evidence supports interpretation of the browning signal as more consistent with land-use and vegetation-cover change than climatic drought alone.
+R7_KF09,The analysis identifies association rather than proof of a single causal mechanism.
+R7_KF10,Conflict attribution remains deferred because no spatially complete Northern Nigeria-wide conflict dataset was used in the definitive analysis.
+R7_KF11,The project therefore demonstrates that vegetation browning should not automatically be interpreted as climatic drought.

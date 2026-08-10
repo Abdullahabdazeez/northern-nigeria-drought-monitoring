@@ -1,18 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it using the metadata below."
-title: "Drought and Vegetation Stress Monitoring Using Remote Sensing and Time-Series Analysis — Northern Nigeria"
+message: "If you use this project, please cite it."
+title: "Vegetation Browning Beyond Climatic Drought: Agro-Climatic Trend, Rainfall Decoupling and Land-Change Evidence in Northern Nigeria"
 type: dataset
 authors:
-  - family-names: "Ayomide"
-    given-names: "Abdullah Abdazeez"
-date-released: 2026-08-05
-repository-code: "https://github.com/Abdullahabdazeez/northern-nigeria-drought-monitoring"
-license: MIT
-keywords:
-  - drought monitoring
-  - remote sensing
-  - vegetation stress
-  - MODIS
-  - CHIRPS
-  - ERA5-Land
-  - Northern Nigeria
+  - family-names: "Abdullah"
+    given-names: "Abdazeez Ayomide"
+year: 2026

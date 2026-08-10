@@ -1,0 +1,16 @@
+Metric,Value,Unit
+Study period,2001–2025,years
+Occupied GAEZ agro-climatic strata,5,strata
+Rainfall-decoupled vegetation-decline strata,1,strata
+Target agro-climatic stratum,LGP 180–239 days,stratum
+Target NDVI Sen slope,-0.0027540176875989,NDVI/year
+Target NDVI FDR-adjusted p-value,9.601609357035024e-05,p-value
+Target rainfall Sen slope,0.8749384729953525,mm/year
+Target rainfall FDR-adjusted p-value,0.6825381782427602,p-value
+Target cropland share change,2.2157675947148547,"percentage points, 2016–2025"
+Target tree-cover share change,-8.881027780935206,"percentage points, 2016–2025"
+Target forest loss,1123.1178847829774,"km², 2001–2025"
+Target forest-loss share of baseline,28.065135145231675,percent
+Robustness scenarios,81,scenarios
+Target integrated interpretation support,77.77777777777779,percent
+Conflict attribution,DEFERRED,status

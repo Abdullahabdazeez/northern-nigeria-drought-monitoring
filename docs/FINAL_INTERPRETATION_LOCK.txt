@@ -1,0 +1,22 @@
+FINAL INTERPRETATION LOCK
+
+ACCEPTED:
+The LGP 180–239 day agro-climatic zone shows statistically significant
+vegetation decline without statistically significant rainfall decline.
+Independent land-change evidence supports an interpretation more consistent
+with land-use and vegetation-cover change than climatic drought alone.
+
+ROBUSTNESS:
+77.8% of 81 scenarios.
+
+CAUSAL STATUS:
+Association / diagnostic evidence only. No single causal mechanism is proven.
+
+CONFLICT:
+Attribution deferred because the available conflict dataset was not spatially
+representative of Northern Nigeria.
+
+REJECTED PUBLIC INTERPRETATION:
+Do not describe the target result as evidence that North Central or the
+LGP 180–239 day zone is simply a climatic "drought hotspot".
+Do not infer general drought severity from NDVI browning alone.

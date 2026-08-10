@@ -1,9 +1,12 @@
 # Methodology
 
-The project integrated MODIS MOD13Q1 V6.1 vegetation indices, CHIRPS precipitation, ERA5-Land temperature and state administrative boundaries.
-
-Vegetation composites were quality screened with the MODIS SummaryQA band, retaining pixels with QA values of 0 or 1. Monthly, annual and May–October growing-season NDVI and EVI summaries were produced for 2001–2025.
-
-CHIRPS rainfall was aggregated to monthly and May–October totals. A 1981–2025 climatology supported standardised rainfall anomalies and SPI-3/SPI-6 estimation. ERA5-Land temperature was aggregated to the same growing-season period.
-
-Vegetation anomalies and Vegetation Condition Index were combined with meteorological drought indicators to identify state-year stress events. Mann–Kendall tests and Sen's slope quantified long-term trends. Integrated pressure rankings combined statistically significant browning, warming, drought exposure and compound stress.
+1. Represent Northern Nigeria using GAEZ length-of-growing-period agro-climatic strata.
+2. Reconstruct annual growing-season NDVI, EVI and rainfall time series for 2001–2025.
+3. Estimate trend magnitude using Sen/Theil–Sen slope.
+4. Correct Mann–Kendall inference for serial correlation using Hamed–Rao modification.
+5. Use TFPW modified Mann–Kendall only where Hamed–Rao is undefined.
+6. Apply Benjamini–Hochberg false discovery rate correction across selected valid tests.
+7. Classify vegetation–rainfall decoupling regimes.
+8. Evaluate independent Dynamic World land-cover change and Hansen forest-loss evidence.
+9. Test interpretation stability across 81 threshold/evidence-count scenarios.
+10. Report associations conservatively and defer unsupported conflict attribution.
