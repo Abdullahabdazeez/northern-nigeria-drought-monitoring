@@ -1,18 +1,22 @@
-# Vegetation Browning Beyond Climatic Drought: Agro-Climatic Trend, Rainfall Decoupling and Land-Change Evidence in Northern Nigeria
+# Vegetation Browning Beyond Climatic Drought in Northern Nigeria
 
-## Overview
+<p align="center">
+  <img src="assets/maps/03_Northern_Nigeria_Final_Vegetation_Rainfall_Decoupling.png" alt="Vegetation-rainfall decoupling across Northern Nigeria" width="100%">
+</p>
 
-This project examines whether vegetation browning across Northern Nigeria can be interpreted as climatic drought alone. Instead of relying on state-level aggregation, the analysis uses agro-climatic zones based on **length of growing period (LGP)** to better follow the regional ecological and moisture gradient.
+## What this project asks
 
-The workflow evaluates vegetation and rainfall trends from **2001–2025**, corrects statistical inference for serial correlation and multiple testing, identifies vegetation–rainfall decoupling, and tests whether independent land-cover and forest-loss evidence supports a non-climatic interpretation.
+When vegetation becomes less green over time, is declining rainfall always the reason?
 
-## Research Question
+I used **2001–2025** vegetation and rainfall records across Northern Nigeria to look for places where vegetation decline is statistically clear but rainfall does not show the same downward trend. I then compared those areas with independent land-cover and forest-loss evidence.
 
-**Where does statistically robust vegetation decline occur without a corresponding decline in rainfall, and does independent land-change evidence support an interpretation beyond climatic drought alone?**
+The main finding is that one agro-climatic zone shows a strong vegetation decline **without a matching rainfall decline**, which means it would be too simple to describe the pattern as climatic drought alone.
 
-## Study Area
+## Why I used agro-climatic zones
 
-Northern Nigeria, represented through five occupied agro-climatic LGP strata:
+Instead of grouping the analysis only by state boundaries, I used **length of growing period (LGP)** zones. These follow the ecological and moisture gradient more closely and reduce the risk of hiding environmental patterns inside administrative averages.
+
+The five occupied zones are:
 
 - LGP <60 days
 - LGP 60–119 days
@@ -20,68 +24,89 @@ Northern Nigeria, represented through five occupied agro-climatic LGP strata:
 - LGP 180–239 days
 - LGP 240–299 days
 
-This ecological framework reduces reliance on administrative aggregation and addresses the **modifiable areal unit problem (MAUP)** that can distort state-level comparisons.
+## Main finding
 
-## Data and Analytical Framework
+The **LGP 180–239 day zone** is the clearest vegetation–rainfall decoupling regime.
 
-| Component | Role |
-|---|---|
-| NDVI | Primary vegetation-greenness indicator |
-| EVI | Independent vegetation-index robustness check |
-| Rainfall | Climatic trend / decoupling indicator |
-| GAEZ LGP zones | Agro-climatic analytical geography |
-| Dynamic World | Land-cover change evidence, 2016–2025 |
-| Hansen forest loss | Independent forest-loss evidence, 2001–2025 |
+| Evidence | Result |
+|---|---:|
+| NDVI trend | **−0.002754 per year** |
+| NDVI FDR-adjusted p | **0.000096** |
+| EVI trend | **−0.001671 per year** |
+| EVI FDR-adjusted p | **0.000849** |
+| Rainfall FDR-adjusted p | **0.682538** |
+| Cropland change | **+2.22 percentage points** |
+| Tree-cover change | **−8.88 percentage points** |
+| Forest loss | **1,123.1 km²** |
+| Forest loss as share of baseline forest | **28.07%** |
+| Interpretation retained across robustness scenarios | **77.8% of 81 scenarios** |
 
-## Statistical Method
+The vegetation decline is therefore statistically strong, while rainfall does not show a significant decline in the same target zone.
 
-Trend magnitude is estimated with **Sen/Theil–Sen slope**.
+## Vegetation trend
 
-Serial correlation is addressed using **Hamed–Rao modified Mann–Kendall** inference. Where Hamed–Rao is mathematically undefined, **trend-free prewhitening (TFPW) modified Mann–Kendall** is used as a documented fallback.
+<p align="center">
+  <img src="assets/maps/01_Northern_Nigeria_Final_Corrected_NDVI_Trend.png" alt="Corrected NDVI trend across Northern Nigeria" width="100%">
+</p>
 
-Multiple hypothesis testing is controlled with the **Benjamini–Hochberg false discovery rate (FDR)** procedure.
+## Rainfall trend
 
-## Key Findings
+<p align="center">
+  <img src="assets/maps/02_Northern_Nigeria_Final_Corrected_Rainfall_Trend.png" alt="Corrected rainfall trend across Northern Nigeria" width="100%">
+</p>
 
-- The **LGP 180–239 day** zone is the principal rainfall-decoupled vegetation-decline regime.
-- NDVI trend: **-0.002754 per year**, FDR-adjusted p = **0.000096**.
-- EVI independently declines at **-0.001671 per year**, FDR-adjusted p = **0.000849**.
-- Rainfall shows **no statistically significant decline** in the target zone; FDR-adjusted p = **0.682538**.
-- Cropland changed by **+2.22 percentage points**.
-- Tree cover changed by **-8.88 percentage points**.
-- Forest loss reached **1,123.1 km²**, equivalent to **28.07%** of baseline forest.
-- The integrated interpretation is retained in **77.8% of 81 robustness scenarios**.
+Looking at the two patterns together is important. A vegetation decline that happens alongside declining rainfall may support a climatic-drought interpretation. A vegetation decline without that rainfall signal needs a different explanation.
 
-## Interpretation
+## Independent land-change evidence
 
-The final evidence does **not** support describing the target zone simply as a climatic drought hotspot.
+<p align="center">
+  <img src="assets/maps/04_Northern_Nigeria_Final_LandChange_Evidence.png" alt="Land-change evidence in Northern Nigeria" width="100%">
+</p>
 
-Significant vegetation decline occurs despite statistically stable rainfall, while independent land-change evidence shows cropland expansion, tree-cover decline and substantial forest loss. The most defensible interpretation is therefore that the observed browning is **more consistent with land-use and vegetation-cover change than climatic drought alone**.
+In the target zone, cropland expands while tree cover declines, and the independent forest-loss dataset records substantial loss. Taken together, those signals are **more consistent with land-use and vegetation-cover change than with climatic drought alone**.
 
-This is an **association-based interpretation, not causal proof**.
+That is an association-based interpretation, not proof of a single cause.
 
-## Important Limitation
+## Statistical approach
 
-Conflict attribution is **deferred**. The conflict dataset available during reconstruction was restricted geographically and was not spatially representative of Northern Nigeria. Conflict is therefore not used as a definitive explanatory driver.
+I estimated trend size with **Sen/Theil–Sen slope**. Because environmental time series can be serially correlated, I used **Hamed–Rao modified Mann–Kendall** inference. Where Hamed–Rao was mathematically undefined, I used **trend-free prewhitening (TFPW) modified Mann–Kendall** as a documented fallback.
 
-## Repository Structure
+Multiple testing was controlled with the **Benjamini–Hochberg false discovery rate (FDR)** procedure.
 
-```text
-assets/
-  maps/
-  charts/
-data/
-  final/
-  tables/
-docs/
-reports/
-```
+This matters because an apparently significant trend can be misleading if serial correlation and repeated testing are ignored.
 
-The final validated package contains five scientific maps, six charts, authoritative result tables, final GIS data, and the technical report.
+## Robustness
 
-## Planning Relevance
+<p align="center">
+  <img src="assets/maps/05_Northern_Nigeria_Final_Integrated_Interpretation_Robustness.png" alt="Robustness of the integrated Northern Nigeria interpretation" width="100%">
+</p>
 
-The study shows why vegetation-index browning should not automatically be classified as drought. Environmental monitoring should jointly evaluate vegetation, rainfall and land-cover change so that drought-response measures are not substituted for land-management interventions where the evidence points to non-climatic pressures.
+The integrated interpretation is retained in **77.8% of 81 tested scenarios**. I use that as evidence that the conclusion is not dependent on one narrow modelling choice.
+
+## What this means for environmental planning
+
+The project shows why vegetation browning should not automatically trigger a drought-only explanation. If rainfall is stable while vegetation declines and land-cover evidence points toward tree loss or agricultural expansion, the response may need to focus more on land management, vegetation protection and local land-use pressures.
+
+Drought monitoring is still important; the point is that it should be interpreted together with land-cover evidence rather than in isolation.
+
+## Important limitation
+
+I do **not** make a final conflict-attribution claim in this project. The conflict dataset available during reconstruction was geographically restricted and was not representative enough of Northern Nigeria to support that conclusion.
+
+## Data used
+
+MODIS NDVI/EVI · CHIRPS rainfall · GAEZ growing-period zones · Dynamic World land cover · Hansen forest loss
+
+## Repository contents
+
+The final package contains five maps, six charts, authoritative result tables, GIS outputs, documentation and the technical report. Maps are in [`assets/maps`](assets/maps/), charts in [`assets/charts`](assets/charts/), and the report in [`reports`](reports/).
+
+## Author
+
+**Abdullah Abdazeez Ayomide**  
+Geospatial Planner · GIS & Remote Sensing Analyst · Urban & Environmental Planning Researcher
+
+[GitHub](https://github.com/Abdullahabdazeez) · [LinkedIn](https://ng.linkedin.com/in/abdazeez-abdullah-4b814719a)
 
 ## Citation
 
